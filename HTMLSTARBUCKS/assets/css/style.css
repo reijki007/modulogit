@@ -180,6 +180,22 @@ header .line {
 .area3--img1 {
     background-image: url('../images/f5.jpg');
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
+}
+
+.area4 {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area4--content {
+    padding: 260px 80px;    
+}
+.area4--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area4--img1 {
+    background-image: url('../images/bg3.jpg');
+    background-size:cover;
+    background-position: right;    
 }
