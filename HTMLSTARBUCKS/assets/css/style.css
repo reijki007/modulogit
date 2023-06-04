@@ -6,7 +6,7 @@ body {
 }
 .container {
     max-width: 1140px;
-    margin: auto;
+    margin: 20px;
 }
 .bar {
     background-color: #006341;
@@ -213,13 +213,15 @@ footer {
 }
 
 
-@media (min-width: 769) and (max-width: 1140px) {
+/*Responsividade*/
+
+@media (min-width: 769px) and (max-width: 1140px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
-@media (min-width: 426px) and (max-width: 768) {
+@media (min-width: 426px) and (max-width: 768px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -236,5 +238,51 @@ footer {
     }
 }
 @media (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--menu {
+        margin-left: 10px;
+    }
+
+    .header--search input {
+        max-width: 100px;
+    } 
     
+    h1 {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner--images img {
+        width: 60px;
+        height: 60px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }    
+    .area5 {
+        height: 200px;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content {
+        padding: 40px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
 }
